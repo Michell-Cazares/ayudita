@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AYUDITA</title>
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="stylesheet" href="./src/css/footer.css">
+  <link rel="stylesheet" href="./src/css/navbar.css">
+  <link rel="stylesheet" href="./src/css/galeria.css">
+  <link rel="stylesheet" href="./src/css/formularios.css">
+  <link REL="SHORTCUT ICON" HREF="./src/img/logo.png">
+  <style>
+    .presentacion{
+        padding: 70px;
+    }
+    /*Teléfono*/
+    @media(max-width:599px){
+        .grid-container{
+            display: grid;
+            gap: 10px;
+            grid-template-areas: 
+            "nav-container"
+            "galeria"
+            "footer"
+            ;
+        } }
+    /*Tablet*/
+    @media (min-width:600px)
+    {
+        .grid-container{
+            grid-template-columns: 50px auto;
+            grid-template-rows: 25px 12.5px auto 12.5px;
+            grid-template-areas: 
+            "nav-container nav-container"
+            "galeria galeria"
+            "footer footer"
+            ;
+        }
+    }
+    /*Escritorio*/
+    @media(min-width:900px){
+        .grid-container{
+          grid-template-columns: 50px auto;
+            grid-template-rows: 25px 12.5px auto 12.5px;
+            grid-template-areas: 
+            "nav-container nav-container nav-container"
+            "galeria galeria galeria"
+            "footer footer footer"
+            ;
+        }
+    } 
+    
+</style>
+</head>
+
+<body>
+  <header>
+    <div class="nav-container">
+      <nav>
+        <div class="logo">
+          <img src="./src/img/logo.png" alt="">
+        </div>
+
+        <div class="menu-items">
+          <a href="./index.html">Inicio</a>
+          <a href="./servicios.html">Servicios</a>
+          <a href="./equipo.html">Nuestro Equipo</a>
+          <a href="contacto.html">Contáctanos</a>
+        </div>
+        <div class="nav-socials">
+          <a href="#">
+            <img src="./src/img/mail.png" alt="mail" width="30px">
+          </a>
+          <a href="#">
+            <img src="./src/img/face.png" alt="facebook" width="30px">
+          </a>
+          <a href="#">
+            <img src="./src/img/what.png" alt="whatsapp" width="30px">
+          </a>
+          <a href="#">
+            <img src="./src/img/insta.png" alt="Instagram" width="30px">
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="galeria"> <!-- wrapper -->
+      <h1 class="galeria-encabezado">Servicios</h1> <!-- section-header -->
+
+      <div class="galeria-contenido"> <!-- main-content -->
+        <div class="galeria-img"> <!-- box -->
+          <img src="./src/img/galeriacentro/centro01.jpg" alt="Centro">
+          <div class="galeria-img-texto"><!-- img-text -->
+            <div class="galeria-img-contenido"><!-- content -->
+              <h2><a href="./primaria.html">Educación Primaria</a></h2>
+              <p>¿Necesitas ayuda en algún tema o materia a nivel Primaria?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="galeria-img">
+          <img src="./src/img/galeriacentro/centro02.jpg" alt="Centro">
+          <div class="galeria-img-texto">
+            <div class="galeria-img-contenido">
+              <h2><a href="./secundaria.html">Educación Secundaria</a></h2>
+              <p>¿Necesitas ayuda en algún tema o materia a nivel Secundaria?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="galeria-img">
+          <img src="./src/img/galeriacentro/centro03.jpg" alt="Centro">
+          <div class="galeria-img-texto">
+            <div class="galeria-img-contenido">
+              <h2><a href="./preparatoria.html">Educación Preparatoria</a></h2>
+              <p>¿Necesitas ayuda en algún tema o materia a nivel Preparatoria?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="galeria-img">
+          <img src="./src/img/galeriacentro/centro04.jpg" alt="Centro">
+          <div class="galeria-img-texto">
+            <div class="galeria-img-contenido">
+              <h2><a href="./orientacionPsicologica.html">Orientación Psicológica</a></h2>
+              <p>¿Necesitas ayuda u orientación Psicológica?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="galeria-img">
+          <img src="./src/img/galeriacentro/centro05.jpg" alt="Centro">
+          <div class="galeria-img-texto">
+            <div class="galeria-img-contenido">
+              <h2><a href="./orientacionSexual.html">Orientación sexual</a></h2>
+              <p>¿Necesitas ayuda u orientación sobre la Educación Sexual?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="galeria-img">
+          <img src="./src/img/galeriacentro/centro06.jpg" alt="Centro">
+          <div class="galeria-img-texto">
+            <div class="galeria-img-contenido">
+              <h2>Próximamente...</h2>
+              <p>Más actividades.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="galeria-img">
+          <img src="./src/img/galeriacentro/centro06.jpg" alt="Centro">
+          <div class="galeria-img-texto">
+            <div class="galeria-img-contenido">
+              <h2>Próximamente...</h2>
+              <p>Más actividades.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="galeria-img">
+          <img src="./src/img/galeriacentro/centro06.jpg" alt="Centro">
+          <div class="galeria-img-texto">
+            <div class="galeria-img-contenido">
+              <h2>Próximamente...</h2>
+              <p>Más actividades.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h4>Centro Comunitario</h4>
+          <ul>
+            <li><a href="./index.html#quienesSomos">¿Quienes somos?</a></li>
+            <li><a href="">Póliza de Privacidad</a></li>
+            <li><a href="./equipo.html">Nuestro Equipo</a></li>
+            <li><a href="./servicios.html">¿Qué servicios brindamos?</a></li>
+            <li><a href="./index.html#horariosAtencion">Horarios de Atención</a></li>
+
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Desarrolladores</h4>
+          <ul>
+            <li><a href="./index.html#quienesSomos">Bryan</a></li>
+            <li><a href="">Cristopher</a></li>
+            <li><a href="">Elena</a></li>
+            <li><a href="">Itzel</a></li>
+            <li><a href="">Michell</a></li>
+            <li><a href="">Susana</a></li>
+
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Patrocinadores</h4>
+          <ul>
+            <li><a href="">
+                <img
+                  src="https://res.cloudinary.com/generation/image/upload/w_200,h_70,c_lpad/mexico/2023/06/fundacion-coppel.svg"
+                  alt="logo de Fundacion Coppel" width="100px">
+              </a>
+            </li>
+            <li><a href="">
+                <img
+                  src="https://res.cloudinary.com/generation/image/upload/w_200,h_70,c_lpad/mexico/2023/06/santander.png"
+                  alt="logo de Santande" width="100px">
+              </a>
+            </li>
+            <li><a href="">
+                <img
+                  src="https://res.cloudinary.com/generation/image/upload/w_200,h_70,c_lpad/mexico/2019/07/logo-becalos-2x.png"
+                  alt="logo de Becalos" width="100px">
+              </a>
+            </li>
+            <li><a href="">
+                <img src="https://franzmayer.org.mx/wp-content/uploads/2021/03/Comex.png" alt="lode de Comex"
+                  width="100px">
+              </a>
+            </li>
+            <li><a href=""> <img src="https://franzmayer.org.mx/wp-content/uploads/2021/09/Fundacion-BBVA_RGB.png"
+                  alt="logo de Fundacion BBVA" width="100px">
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Síguenos o Contáctanos</h4>
+          <div class="footer-socials">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="./src/img/mail.png" alt="mail" width="30px">
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img src="./src/img/face.png" alt="facebook" width="30px">
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img src="./src/img/what.png" alt="whatsapp" width="30px">
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img src="./src/img/insta.png" alt="Instagram" width="30px">
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
