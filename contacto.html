@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYUDITA</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
+    <link rel="stylesheet" href="./src/css/navbar.css">
+    <link rel="stylesheet" href="./src/css/contacto.css">
+    <link REL="SHORTCUT ICON" HREF="./src/img/logo.png">
+    <style>
+      .presentacion {
+        padding: 70px;
+      }
+  
+      /*Teléfono*/
+      @media(max-width:599px) {
+        .grid-container {
+          display: grid;
+          gap: 10px;
+          grid-template-areas:
+            "nav-container"
+            "presentacion"
+            "footer";
+        }
+      }
+  
+      /*Tablet*/
+      @media (min-width:600px) {
+        .grid-container {
+          grid-template-columns: auto auto;
+          grid-template-rows: auto auto auto auto;
+          grid-template-areas:
+            "nav-container nav-container"
+            "presentacion presentacion"
+            "footer footer"
+          ;
+        }
+      }
+  
+      /*Escritorio*/
+      @media(min-width:900px) {
+        .grid-container {
+          grid-template-columns: auto auto;
+          grid-template-rows: auto auto auto auto;
+          grid-template-areas:
+            "nav-container nav-container nav-container"
+            "presentacion presentacion presentacion"
+            "footer footer footer"
+          ;
+        }
+      }
+    </style>
+</head>
+
+<body class="grid-container">
+    <header class="nav-container">
+        <div>
+            <nav>
+                <div class="logo">
+                    <img src="./src/img/logo.png" alt="">
+                </div>
+
+                <div class="menu-items">
+                    <a href="./index.html">Inicio</a>
+                    <a href="./servicios.html">Servicios</a>
+                    <a href="./equipo.html">Nuestro Equipo</a>
+                    <a href="contacto.html">Contáctanos</a>
+                </div>
+                <div class="nav-socials">
+                    <a href="#">
+                        <img src="./src/img/mail.png" alt="mail" width="30px">
+                    </a>
+                    <a href="#">
+                        <img src="./src/img/face.png" alt="facebook" width="30px">
+                    </a>
+                    <a href="#">
+                        <img src="./src/img/what.png" alt="whatsapp" width="30px">
+                    </a>
+                    <a href="#">
+                        <img src="./src/img/insta.png" alt="Instagram" width="30px">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+  <main class="presentacion">
+    <main>
+      <section class="content">
+        <h2>¿Tienes alguna duda o quieres recibir más información? </h2>
+        <h3>Completa el siguiente formulario y recibirás un correo con mayor información. </h3>
+        <h3>Horarios:</h3>
+        <p>Nosotros estamos abiertos de 9am a 5pm de Lunes a Viernes
+          Sabados: 12pm a 3pm</p>
+      </section>
+      <div class="content">
+        <h3 class="titulo">Contáctanos</h3>
+
+        <div class="contact-wrapper">
+          <div class="contact-form">
+            <h3>Datos Personales</h3>
+            <form action="">
+              <p><label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" required>
+              </p>
+              <p><label for="fechaNac">Fecha de Nacimiento</label>
+                <input type="date" id="fechaNac" required>
+              </p>
+              <p><label for="numero">Número telefónico </label>
+                <input type="tel" id="numero" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="312-134-6641" required>
+              </p>
+              <p><label for="email">Email </label>
+                <input type="email" id="email" required>
+              </p>
+              <p><label for="comentarios">Déjanos tus comentarios </label>
+                <textarea id="comentarios" name="comentarios" rows="8" cols="100"></textarea>
+              </p>
+              <p><label for="hobbies">Selecciona tu hobby favorito</label>
+                <input type="checkbox">Leer
+                <br>
+                <input type="checkbox">Viajar
+                <br>
+                <input type="checkbox">Hacer ejercicio
+              </p>
+
+              <p><label>¿De dónde eres?</label>
+                <select name="estado" id="estado" required>
+                  <option value="no">Seleccione uno...</option>
+                  <option value="Aguascalientes">Aguascalientes</option>
+                  <option value="Baja California">Baja California</option>
+                  <option value="Baja California Sur">Baja California Sur</option>
+                  <option value="Campeche">Campeche</option>
+                  <option value="Chiapas">Chiapas</option>
+                  <option value="Chihuahua">Chihuahua</option>
+                  <option value="CDMX">Ciudad de México</option>
+                  <option value="Coahuila">Coahuila</option>
+                  <option value="Colima">Colima</option>
+                  <option value="Durango">Durango</option>
+                  <option value="Estado de México">Estado de México</option>
+                  <option value="Guanajuato">Guanajuato</option>
+                  <option value="Guerrero">Guerrero</option>
+                  <option value="Hidalgo">Hidalgo</option>
+                  <option value="Jalisco">Jalisco</option>
+                  <option value="Michoacán">Michoacán</option>
+                  <option value="Morelos">Morelos</option>
+                  <option value="Nayarit">Nayarit</option>
+                  <option value="Nuevo León">Nuevo León</option>
+                  <option value="Oaxaca">Oaxaca</option>
+                  <option value="Puebla">Puebla</option>
+                  <option value="Querétaro">Querétaro</option>
+                  <option value="Quintana Roo">Quintana Roo</option>
+                  <option value="San Luis Potosí">San Luis Potosí</option>
+                  <option value="Sinaloa">Sinaloa</option>
+                  <option value="Sonora">Sonora</option>
+                  <option value="Tabasco">Tabasco</option>
+                  <option value="Tamaulipas">Tamaulipas</option>
+                  <option value="Tlaxcala">Tlaxcala</option>
+                  <option value="Veracruz">Veracruz</option>
+                  <option value="Yucatán">Yucatán</option>
+                  <option value="Zacatecas">Zacatecas</option>
+                </select>
+              </p>
+              <p>¿Cuál es tu género?:
+                <input type="radio" id="hombre" name="genero" value="Hombre">
+                <label for="hombre">Hombre</label><br>
+                <input type="radio" id="mujer" name="genero" value="Mujer">
+                <label for="mujer">Mujer</label><br>
+                <input type="radio" id="otro" name="genero" value="otro">
+                <label for="otro">Otro</label>
+              </p>
+              <br>
+              <br>
+              <p class="block">
+                <button class="block" type="submit" value="Enviar">
+                  Enviar
+                </button>
+              </p>
+            </form>
+          </div>
+          <div class="contact-info">
+            <h4>Nuestra ubicación</h4>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481934.62152063334!2d-99.48228682198571!3d19.320848861303688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0036b1352927%3A0xdefd9e4ee8d18a5b!2sCd.%20de%20M%C3%A9xico!5e0!3m2!1ses-419!2smx!4v1688421317096!5m2!1ses-419!2smx"
+              width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </main>
+  <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>Centro Comunitario</h4>
+            <ul>
+              <li><a href="./index.html#quienesSomos">¿Quienes somos?</a></li>
+              <li><a href="">Póliza de Privacidad</a></li>
+              <li><a href="./equipo.html">Nuestro Equipo</a></li>
+              <li><a href="./servicios.html">¿Qué servicios brindamos?</a></li>
+              <li><a href="./index.html#horariosAtencion">Horarios de Atención</a></li>
+
+            </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Desarrolladores</h4>
+              <ul>
+                <li><a href="./index.html#quienesSomos">Bryan</a></li>
+                <li><a href="">Cristopher</a></li>
+                <li><a href="">Elena</a></li>
+                <li><a href="">Itzel</a></li>
+                <li><a href="">Michell</a></li>
+                <li><a href="">Susana</a></li>
+    
+              </ul>
+            </div>
+
+          <div class="footer-col">
+            <h4>Patrocinadores</h4>
+            <ul>
+              <li><a href="">
+                  <img
+                    src="https://res.cloudinary.com/generation/image/upload/w_200,h_70,c_lpad/mexico/2023/06/fundacion-coppel.svg"
+                    alt="logo de Fundacion Coppel" width="100px">
+                </a>
+              </li>
+              <li><a href="">
+                  <img
+                    src="https://res.cloudinary.com/generation/image/upload/w_200,h_70,c_lpad/mexico/2023/06/santander.png"
+                    alt="logo de Santande" width="100px">
+                </a>
+              </li>
+              <li><a href="">
+                  <img
+                    src="https://res.cloudinary.com/generation/image/upload/w_200,h_70,c_lpad/mexico/2019/07/logo-becalos-2x.png"
+                    alt="logo de Becalos" width="100px">
+                </a>
+              </li>
+              <li><a href="">
+                  <img src="https://franzmayer.org.mx/wp-content/uploads/2021/03/Comex.png" alt="lode de Comex"
+                    width="100px">
+                </a>
+              </li>
+              <li><a href=""> <img src="https://franzmayer.org.mx/wp-content/uploads/2021/09/Fundacion-BBVA_RGB.png"
+                    alt="logo de Fundacion BBVA" width="100px">
+                </a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Síguenos o Contáctanos</h4>
+            <div class="footer-socials">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="./src/img/mail.png" alt="mail" width="30px">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <img src="./src/img/face.png" alt="facebook" width="30px">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <img src="./src/img/what.png" alt="whatsapp" width="30px">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <img src="./src/img/insta.png" alt="Instagram" width="30px">
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
