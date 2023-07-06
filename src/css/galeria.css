@@ -1,0 +1,101 @@
+/* CSS PARA EL BODY Y LA GALERÍA */
+body{
+    background-color: beige;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.galeria {
+    background-image: linear-gradient(to bottom right, #f3b33d, #7ee27b, #77d8ff, rgb(194, 89, 255));
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.4);
+    width: 80%;
+    padding: 30px 30px;
+    text-align: center;
+}
+
+.galeria-encabezado {
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    font-size: 55px;
+    letter-spacing: 3px;
+}
+
+.galeria-img-contenido {
+    padding: 10%;
+}
+
+.galeria-img-contenido h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.galeria-img-contenido p {
+    line-height: 1.5;
+}
+
+.galeria-contenido {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
+}
+
+.galeria-contenido .galeria-img {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 15px;
+    height: 250px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 20px 20px 20px 20px;
+}
+
+.galeria-contenido .galeria-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.galeria-contenido .galeria-img:hover::before {
+    top: 0;
+    right: calc(100% - 5px);
+    z-index: 8;
+}
+
+.galeria-contenido .galeria-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galeria-contenido .galeria-img .galeria-img-texto {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.galeria-contenido .galeria-img:hover .galeria-img-texto {
+    top: 0;
+    right: 0;
+}
