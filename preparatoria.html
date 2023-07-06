@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYUDITA</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/navbar.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
+    <link rel="stylesheet" href="./src/css/formularios.css">
+    <link REL="SHORTCUT ICON" HREF="./src/img/logo.png">
+    <style>
+        .presentacion {
+            padding: 70px;
+        }
+
+        /*Teléfono*/
+        @media(max-width:599px) {
+            .grid-container {
+                display: grid;
+                gap: 10px;
+                grid-template-areas:
+                    "header"
+                    "presentacion"
+                    "tabla"
+                    "patrocinadores";
+            }
+        }
+
+        /*Tablet*/
+        @media (min-width:600px) {
+            .grid-container {
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto auto auto;
+                grid-template-areas:
+                    "header header"
+                    "presentacion tabla"
+                    "patrocinadores patrocinadores"
+                ;
+            }
+        }
+
+        /*Escritorio*/
+        @media(min-width:900px) {
+            .grid-container {
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto auto auto;
+                grid-template-areas:
+                    "header header header"
+                    "presentacion presentacion presentacion"
+                    "tabla tabl tabla"
+                    "patrocinadores patrocinadores patrocinadores"
+                ;
+            }
+        }
+    </style>
+</head>
+
+<body class="grid-container">
+    <header>
+        <div class="nav-container">
+            <nav>
+                <div class="logo">
+                    <img src="./src/img/logo.png" alt="">
+                </div>
+
+                <div class="menu-items">
+                    <a href="./index.html">Inicio</a>
+                    <a href="./servicios.html">Servicios</a>
+                    <a href="./equipo.html">Nuestro Equipo</a>
+                    <a href="contacto.html">Contáctanos</a>
+                </div>
+                <div class="nav-socials">
+                    <a href="#">
+                        <img src="./src/img/mail.png" alt="mail" width="30px">
+                    </a>
+                    <a href="#">
+                        <img src="./src/img/face.png" alt="facebook" width="30px">
+                    </a>
+                    <a href="#">
+                        <img src="./src/img/what.png" alt="whatsapp" width="30px">
+                    </a>
+                    <a href="#">
+                        <img src="./src/img/insta.png" alt="Instagram" width="30px">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="presentacion">
+        <H1>Ayuda escolar a nivel preparatoria</H1>
+    </main>
+    <form class="tabla" action="">
+        <fieldset>
+            <H1 class="patrocinadores">¿Necesitas ayuda en algún tema o materia a nivel Preparatoria? Registrate!</H1>
+            <h3>Datos Personales</h3>
+            <p><label for="nombre">Nombre Completo:</label></p>
+            <input type="text" id="nombre" required>
+            <p><label for="fechaNac">Fecha de Nacimiento:</label></p>
+            <input type="date" id="fechaNac" required>
+            <p><label for="numero">Número telefónico:</label></p>
+            <input type="tel" id="numero" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="312-134-6641" required>
+            <p><label for="email">Email:</label></p>
+            <input type="email" id="email" required>
+            <p><label for="hobbies">Selecciona alguna/s materia/s de tu interés:</label></p>
+            <input type="checkbox">Español
+            <br>
+            <input type="checkbox">Matemáticas
+            <br>
+            <input type="checkbox">Historia
+            <br>
+            <input type="checkbox">Geografía
+            <br>
+            <input type="checkbox">Biología
+            <br>
+            <input type="checkbox">Lengua española
+            <br>
+            <input type="checkbox">Inglés
+            <br>
+            <input type="checkbox">Formulación de Proyecto
+            <br>
+            <input type="checkbox">Literatura
+
+
+            <p><label>Selecciona el grado en el que te encuentras:</label></p>
+            <select name="estado" id="estado" required>
+                <option value="no">Seleccione uno...</option>
+                <option value="Primero">Primero</option>
+                <option value="Segundo">Segundo</option>
+                <option value="Tercero">Tercero</option>
+            </select>
+
+            <p><label>¿De dónde eres?</label></p>
+            <select name="estado" id="estado" required>
+                <option value="no">Seleccione uno...</option>
+                <option value="Aguascalientes">Aguascalientes</option>
+                <option value="Baja California">Baja California</option>
+                <option value="Baja California Sur">Baja California Sur</option>
+                <option value="Campeche">Campeche</option>
+                <option value="Chiapas">Chiapas</option>
+                <option value="Chihuahua">Chihuahua</option>
+                <option value="CDMX">Ciudad de México</option>
+                <option value="Coahuila">Coahuila</option>
+                <option value="Colima">Colima</option>
+                <option value="Durango">Durango</option>
+                <option value="Estado de México">Estado de México</option>
+                <option value="Guanajuato">Guanajuato</option>
+                <option value="Guerrero">Guerrero</option>
+                <option value="Hidalgo">Hidalgo</option>
+                <option value="Jalisco">Jalisco</option>
+                <option value="Michoacán">Michoacán</option>
+                <option value="Morelos">Morelos</option>
+                <option value="Nayarit">Nayarit</option>
+                <option value="Nuevo León">Nuevo León</option>
+                <option value="Oaxaca">Oaxaca</option>
+                <option value="Puebla">Puebla</option>
+                <option value="Querétaro">Querétaro</option>
+                <option value="Quintana Roo">Quintana Roo</option>
+                <option value="San Luis Potosí">San Luis Potosí</option>
+                <option value="Sinaloa">Sinaloa</option>
+                <option value="Sonora">Sonora</option>
+                <option value="Tabasco">Tabasco</option>
+                <option value="Tamaulipas">Tamaulipas</option>
+                <option value="Tlaxcala">Tlaxcala</option>
+                <option value="Veracruz">Veracruz</option>
+                <option value="Yucatán">Yucatán</option>
+                <option value="Zacatecas">Zacatecas</option>
+            </select>
+            <p>¿Cuál es tu género?:</p>
+            <input type="radio" id="hombre" name="genero" value="Hombre">
+            <label for="hombre">Hombre</label><br>
+            <input type="radio" id="mujer" name="genero" value="Mujer">
+            <label for="mujer">Mujer</label><br>
+            <input type="radio" id="otro" name="genero" value="otro">
+            <label for="otro">Otro</label>
+            <br>
+            <p><label for="comentarios">Déjanos tus comentarios:</label></p>
+            <textarea id="comentarios" name="comentarios" rows="10" cols="50"></textarea>
+            <br><br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h4>Centro Comunitario</h4>
+              <ul>
+                <li><a href="./index.html#quienesSomos">¿Quienes somos?</a></li>
+                <li><a href="">Póliza de Privacidad</a></li>
+                <li><a href="./equipo.html">Nuestro Equipo</a></li>
+                <li><a href="./servicios.html">¿Qué servicios brindamos?</a></li>
+                <li><a href="./index.html#horariosAtencion">Horarios de Atención</a></li>
+    
+              </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Desarrolladores</h4>
+                <ul>
+                  <li><a href="./index.html#quienesSomos">Bryan</a></li>
+                  <li><a href="">Cristopher</a></li>
+                  <li><a href="">Elena</a></li>
+                  <li><a href="">Itzel</a></li>
+                  <li><a href="">Michell</a></li>
+                  <li><a href="">Susana</a></li>
+      
+                </ul>
+              </div>
+    
+            <div class="footer-col">
+              <h4>Patrocinadores</h4>
+              <ul>
+                <li><a href="">
+                    <img
+                      src="https://res.cloudinary.com/generation/image/upload/w_200,h_70,c_lpad/mexico/2023/06/fundacion-coppel.svg"
+                      alt="logo de Fundacion Coppel" width="100px">
+                  </a>
+                </li>
+                <li><a href="">
+                    <img
+                      src="./src/img/patrocinadores/santander.png"
+                      alt="logo de Santande" width="100px">
+                  </a>
+                </li>
+                <li><a href="">
+                    <img
+                      src="./src/img/patrocinadores/becalos.png"
+                      alt="logo de Becalos" width="100px">
+                  </a>
+                </li>
+                <li><a href="">
+                    <img src="https://franzmayer.org.mx/wp-content/uploads/2021/03/Comex.png" alt="lode de Comex"
+                      width="100px">
+                  </a>
+                </li>
+                <li><a href=""> <img src="https://franzmayer.org.mx/wp-content/uploads/2021/09/Fundacion-BBVA_RGB.png"
+                      alt="logo de Fundacion BBVA" width="100px">
+                  </a>
+                </li>
+    
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Síguenos o Contáctanos</h4>
+              <div class="footer-socials">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <img src="./src/img/mail.png" alt="mail" width="30px">
+                    </a>
+                  </li>
+    
+                  <li>
+                    <a href="#">
+                      <img src="./src/img/face.png" alt="facebook" width="30px">
+                    </a>
+                  </li>
+    
+                  <li>
+                    <a href="#">
+                      <img src="./src/img/what.png" alt="whatsapp" width="30px">
+                    </a>
+                  </li>
+    
+                  <li>
+                    <a href="#">
+                      <img src="./src/img/insta.png" alt="Instagram" width="30px">
+                    </a>
+                  </li>
+    
+                </ul>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+
+</html>
