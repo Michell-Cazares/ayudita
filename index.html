@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AYUDITA</title>
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="stylesheet" href="./src/css/navbar.css">
+  <link rel="stylesheet" href="./src/css/footer.css">
+  <link REL="SHORTCUT ICON" HREF="./src/img/logo.png">
+  <style>
+    .presentacion{
+        padding: 70px;
+    }
+    /*Teléfono*/
+    @media(max-width:599px){
+        .grid-container{
+            display: grid;
+            gap: 10px;
+            grid-template-areas: 
+            "navbar"
+            "presentacion"
+            "footer";
+        } }
+    /*Tablet*/
+    @media (min-width:600px)
+    {
+        .grid-container{
+            grid-template-columns: 25px auto;
+            grid-template-rows: 12.5px 7px auto 7px;
+            grid-template-areas: 
+            "navbar navbar"
+            "presentacion presentacion"
+            "footer footer"
+            ;
+        }
+    }
+    /*Escritorio*/
+    @media(min-width:900px){
+        .grid-container{
+            grid-template-columns: 25px auto;
+            grid-template-rows: 12.5px 7px auto 7px;
+            grid-template-areas: 
+            "navbar navbar navbar"
+            "presentacion presentacion presentacion"
+            "footer footer footer"
+            ;
+        }
+    } 
+    
+</style>
+</head>
+
+<body class="grid-container">
+  <header class="navbar">
+    <div class="nav-container">
+      <nav>
+        <div class="logo">
+          <img src="./src/img/logo.png" alt="">
+        </div>
+
+        <div class="menu-items">
+          <a href="./index.html">Inicio</a>
+          <a href="./servicios.html">Servicios</a>
+          <a href="./equipo.html">Nuestro Equipo</a>
+          <a href="contacto.html">Contáctanos</a>
+        </div>
+        <div class="nav-socials">
+          <a href="#">
+            <img src="./src/img/mail.png" alt="mail" width="30px">
+          </a>
+          <a href="#">
+            <img src="./src/img/face.png" alt="facebook" width="30px">
+          </a>
+          <a href="#">
+            <img src="./src/img/what.png" alt="whatsapp" width="30px">
+          </a>
+          <a href="#">
+            <img src="./src/img/insta.png" alt="Instagram" width="30px">
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="presentacion">
+    <div class="slider-container">
+      <img class="slider-item" src="./src/img/carrusel/carrusel1.jpg" />
+      <img class="slider-item" src="./src/img/carrusel/carrusel2.jpg" />
+      <img class="slider-item" src="./src/img/carrusel/carrusel3.jpeg" />
+    </div>
+    <br>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="column medium-6">
+          <table id="quienesSomos">
+            <tr>
+              <h1><strong>
+                  <center>Bienvenidos a este centro comunitario </center>
+                </strong></h1>
+            </tr>
+            <tr>
+              <td>
+
+                <h2>
+                  <center>¿Quiénes somos?</center>
+                </h2><br>
+                <h3>En nuestro centro comunitario, trabajamos en colaboración con profesionales de la salud,
+                  educadores y
+                  activistas para poder ofrecer una amplia gama de servicios.
+                  Esto incluye talleres interactivos, charlas educativas, asesoramiento individual y grupal, recursos
+                  impresos y
+                  digitales, y acceso a servicios de salud sexual y reproductiva.
+                </h3>
+              </td>
+              <td>
+                <video src="./src/img/videos/VideoIndex.mp4" controls poster="./src/img/videos/vistaPrevis.jpg"
+                  width="650">
+                  Tu navegador no admite el elemento <code>video</code>.
+                </video>
+              </td>
+            </tr>
+
+          </table>
+          <h2 id="horariosAtencion">Horarios de atención:</h2>
+          <h3>Nuestro horario de atención es de:</h3>
+          <h3>Lunes a Viernes: de 9am a 5pm.</h3>
+          <h3>Sabados: 12pm a 3pm</h3>
+
+        </div>
+      </div>
+    </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h4>Centro Comunitario</h4>
+          <ul>
+            <li><a href="./index.html#quienesSomos">¿Quienes somos?</a></li>
+            <li><a href="">Póliza de Privacidad</a></li>
+            <li><a href="./equipo.html">Nuestro Equipo</a></li>
+            <li><a href="./servicios.html">¿Qué servicios brindamos?</a></li>
+            <li><a href="./index.html#horariosAtencion">Horarios de Atención</a></li>
+
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Desarrolladores</h4>
+          <ul>
+            <li><a href="./index.html#quienesSomos">Bryan</a></li>
+            <li><a href="">Cristopher</a></li>
+            <li><a href="">Elena</a></li>
+            <li><a href="">Itzel</a></li>
+            <li><a href="">Michell</a></li>
+            <li><a href="">Susana</a></li>
+
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Patrocinadores</h4>
+          <ul>
+            <li><a href="">
+                <img
+                  src="https://res.cloudinary.com/generation/image/upload/w_200,h_70,c_lpad/mexico/2023/06/fundacion-coppel.svg"
+                  alt="logo de Fundacion Coppel" width="100px">
+              </a>
+            </li>
+            <li><a href="">
+                <img src="./src/img/patrocinadores/santander.png" alt="logo de Santande" width="100px">
+              </a>
+            </li>
+            <li><a href="">
+                <img src="./src/img/patrocinadores/becalos.png" alt="logo de Becalos" width="100px">
+              </a>
+            </li>
+            <li><a href="">
+                <img src="https://franzmayer.org.mx/wp-content/uploads/2021/03/Comex.png" alt="lode de Comex"
+                  width="100px">
+              </a>
+            </li>
+            <li><a href=""> <img src="https://franzmayer.org.mx/wp-content/uploads/2021/09/Fundacion-BBVA_RGB.png"
+                  alt="logo de Fundacion BBVA" width="100px">
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Síguenos o Contáctanos</h4>
+          <div class="footer-socials">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="./src/img/mail.png" alt="mail" width="30px">
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img src="./src/img/face.png" alt="facebook" width="30px">
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img src="./src/img/what.png" alt="whatsapp" width="30px">
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img src="./src/img/insta.png" alt="Instagram" width="30px">
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
